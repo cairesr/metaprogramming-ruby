@@ -16,9 +16,9 @@ module Meta
       end
     end
   end
-module Meta
+end
 
-using Meta::MyClassRefinement
+#using Meta::MyClassRefinement
 
-Meta::MyClass.new.my_method
-Meta::MyClass.new.another_method
+#Meta::MyClass.new.my_method
+#Meta::MyClass.new.another_method

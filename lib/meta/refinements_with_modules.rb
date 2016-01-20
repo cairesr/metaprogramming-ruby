@@ -30,5 +30,5 @@ module Meta
     include Document
   end
 
-  Book.new.print
+  #Book.new.print
 end

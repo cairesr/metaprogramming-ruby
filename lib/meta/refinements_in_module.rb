@@ -9,8 +9,9 @@ module Meta
 
   module StringStuff
     using StringExtensions
-    puts "my_string".reverse
+
+    #puts "my_string".reverse
   end
 
-  puts "my_string".reverse
+  #puts "my_string".reverse
 end
