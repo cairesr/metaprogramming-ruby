@@ -8,8 +8,14 @@ describe Meta::Refinements::MyClass do
       it { is_expected.to match /original my_method/ }
     end
 
-    context 'with MyClassRefinement applied' do
+    context 'with MyClassRefinement applied to a class' do
       subject { Meta::Refinements::MyClassWithRefinedMethod.new.refined_my_method_test }
+
+      it { is_expected.to match /refined my_method/ }
+    end
+
+    context 'with MyClassRefinement applied to a module' do
+      subject { Meta::Refinements::MyModuleWithRefinedMethod.refined_my_method_test }
 
       it { is_expected.to match /refined my_method/ }
     end

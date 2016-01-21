@@ -25,5 +25,15 @@ module Meta
         MyClass.new.my_method
       end
     end
+
+    module MyModuleWithRefinedMethod
+      using MyClassRefinement
+
+      class << self
+        def refined_my_method_test
+          MyClass.new.my_method
+        end
+      end
+    end
   end
 end
