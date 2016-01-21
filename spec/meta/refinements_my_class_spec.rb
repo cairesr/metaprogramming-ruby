@@ -1,21 +1,21 @@
 require 'spec_helper'
 
-describe Meta::Refinements::MyClass do
+describe Methods::Refinements::MyClass do
   describe '#my_method' do
     context 'without a refinement' do
-      subject { Meta::Refinements::MyClass.new.my_method }
+      subject { Methods::Refinements::MyClass.new.my_method }
 
       it { is_expected.to match /original my_method/ }
     end
 
     context 'with MyClassRefinement applied to a class' do
-      subject { Meta::Refinements::MyClassWithRefinedMethod.new.refined_my_method_test }
+      subject { Methods::Refinements::MyClassWithRefinedMethod.new.refined_my_method_test }
 
       it { is_expected.to match /refined my_method/ }
     end
 
     context 'with MyClassRefinement applied to a module' do
-      subject { Meta::Refinements::MyModuleWithRefinedMethod.refined_my_method_test }
+      subject { Methods::Refinements::MyModuleWithRefinedMethod.refined_my_method_test }
 
       it { is_expected.to match /refined my_method/ }
     end

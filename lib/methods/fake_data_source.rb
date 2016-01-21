@@ -1,4 +1,4 @@
-module Meta
+module Methods
   class FakeDataSource
     def get_cpu_info
       puts "nothing about cpus"

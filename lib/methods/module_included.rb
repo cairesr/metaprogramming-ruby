@@ -1,4 +1,4 @@
-module Meta
+module Methods
   module ModuleIncluded
     module Printable
       def print

@@ -1,4 +1,4 @@
-module Meta
+module Methods
   module Refinements
     class MyClass
       def my_method

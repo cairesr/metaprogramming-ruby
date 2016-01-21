@@ -1,4 +1,4 @@
-module Meta
+module Methods
   class Computer
     def initialize(data_source = nil)
       return unless data_source
